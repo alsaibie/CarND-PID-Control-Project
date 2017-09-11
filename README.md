@@ -2,18 +2,19 @@
 Self-Driving Car Engineer Nanodegree Program
 
 ## Introduction
-In this project we explore the use a basic PID feedback control algorithm to steer a car on a road. The simulator
-provides us with the error angle and the controller is to provided a steer angle in order to have the car remain within
+In this project we explore the use of a basic PID feedback control algorithm to steer a car on a road. The simulator
+provides us with the error angle and the controller is to provide a steer angle in order to have the car remain within
 the bounds of the road.
 
 ## Reflection
 
 While the vehicle maintained itself within the boundary of the road, the driving behavior with PID is, and cannot be
-relied one in reality.
+relied on in reality.
 ### Effects of P, I, and D
 
 P Gain: The P gain has the most direct impact on the performance of the controller, a high P gain causes an overshoot
-while a low P gain causes and undershoot and slow response of the system. Removing the P gain is not an option and
+and oscillation, while a low P gain causes and undershoot and slow response of the system. Removing the P gain is not an
+ option and
 causes the system to become unstable
 
 I Gain: The I gain primarily helps in reducing steady-state error. It works well in this case, where the system
